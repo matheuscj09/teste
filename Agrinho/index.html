@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do campo à cidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container text-center my-4">
+        <h1>Do campo à cidade</h1>
+        <!-- Botão de trocar tema -->
+        <button id="modo-btn" class="btn btn-dark">🌙 Mudar tema</button>
+    </div>
+
+    <main class="container">
+        <h2>Curiosidades:</h2>
+        <div class="row justify-content-center">
+
+            <!-- Curiosidade 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/vida-no-campo-1-jpeg.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Vida no Campo</h5>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#modal1">Veja as curiosidades</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curiosidade 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/img2.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Vida na Cidade</h5>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#modal2">Veja as curiosidades</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curiosidade 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Migração do Campo para a Cidade</h5>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#modal3">Veja as curiosidades</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">vida no campo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O campo oferece uma vida mais tranquila, cercada pela natureza, com menor poluição e menos barulho. É comum a prática da agricultura, pecuária e uma maior conexão com os ciclos naturais.</p>
+                    <img src="img/vida-no-campo-1-jpeg.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>Vida na Cidade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A cidade proporciona acesso facilitado a serviços, como escolas, hospitais, transporte e lazer. Porém, é marcada por trânsito, poluição e um ritmo de vida mais acelerado.</p>
+                    <img src="img/img2.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Migração do Campo para a Cidade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ao longo dos anos, muitas pessoas migraram do campo para a cidade em busca de melhores oportunidades de emprego, estudo e qualidade de vida. Esse movimento é chamado de êxodo rural.</p>
+                    <img src="img/img3.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        const botao = document.getElementById('modo-btn');
+        botao.addEventListener('click', () => {
+            const html = document.documentElement;
+            const temaAtual = html.getAttribute('data-bs-theme');
+            const novoTema = temaAtual === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-bs-theme', novoTema);
+        });
+    </script>
+
+</body>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<article class="cartao">
+    <div class="cartao__conteudo">
+    <h3>Diferença entre Campo e Cidade</h3>
+    <div class="cartao__conteudo__pergunta">
+        </h1></p>Sabe como funciona a migração do campo a cidade?</p></h1>
+    </div>
+    <div class="cartao__conteudo__resposta">
+        </p>O campo é caracterizado por uma vida mais próxima da natureza, com atividades rurais, espaços abertos e menos densidade populacional. Já a cidade é um espaço urbanizado, com muitos prédios, indústrias, serviços e uma vida mais dinâmica. Ambos têm vantagens e desafios.</p>
+    </div>
+    </article>
+
+            <h2>Produzido por: Matheus de Farias Rückel</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>
